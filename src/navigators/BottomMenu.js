@@ -1,7 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { MaterialCommunityIcons, Entypo, Ionicons } from 'react-native-vector-icons'
-
+// import { MaterialCommunityIcons, Entypo, Ionicons } from 'react-native-vector-icons'
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import Entypo from 'react-native-vector-icons/Entypo';
+import Icon from 'react-native-vector-icons/Ionicons';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 const Tab = createBottomTabNavigator();
 
@@ -70,7 +72,7 @@ const BottomMenu = () => {
                 options={{
                     tabBarLabelStyle: styles.menuTitle,
                     tabBarIcon: ({ focused }) => (
-                        <Ionicons
+                        <Icon
                             name="settings-sharp"
                             size={20}
                             color={focused ? "#ff8216" : "#ccc"}

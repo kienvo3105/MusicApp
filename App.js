@@ -1,6 +1,6 @@
-import { StyleSheet, Text, View, SafeAreaProvider } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 
